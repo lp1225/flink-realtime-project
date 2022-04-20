@@ -1,12 +1,12 @@
 package com.lp.sink;
 
 public class Access {
+
     private Long time;
     private String domain;
     private Double traffic;
 
     public Access() {
-
     }
 
     public Access(Long time, String domain, Double traffic) {
