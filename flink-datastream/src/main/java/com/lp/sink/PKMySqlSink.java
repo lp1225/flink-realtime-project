@@ -17,6 +17,7 @@ public class PKMySqlSink extends RichSinkFunction<Tuple2<String, Double>>{
     @Override
     public void open(Configuration parameters) throws Exception {
         super.open(parameters);
+
         connection = MySqlUtils.getConnection();
         assert connection != null;
         insertPstmt = connection.prepareStatement("insert into pk_traffic(domain, traffic) values(?,?)");

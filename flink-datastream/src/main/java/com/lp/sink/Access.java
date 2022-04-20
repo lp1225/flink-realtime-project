@@ -6,6 +6,7 @@ public class Access {
     private Double traffic;
 
     public Access() {
+
     }
 
     public Access(Long time, String domain, Double traffic) {
