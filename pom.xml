@@ -10,6 +10,7 @@
     <version>1.0</version>
     <modules>
         <module>flink-001</module>
+        <module>flink-datastream</module>
     </modules>
 
     <properties>
