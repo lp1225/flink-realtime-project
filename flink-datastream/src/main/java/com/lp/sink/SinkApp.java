@@ -16,6 +16,7 @@ public class SinkApp {
     }
 
     private static void toMySql(StreamExecutionEnvironment env) {
+
         DataStreamSource<String> source = env.readTextFile("data/access.log");
         SingleOutputStreamOperator<Access> mapStream = source.map(new MapFunction<String, Access>() {
             @Override

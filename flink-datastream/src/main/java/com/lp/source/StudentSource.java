@@ -36,6 +36,5 @@ public class StudentSource extends RichSourceFunction<Student> {
 
     @Override
     public void cancel() {
-
     }
 }
